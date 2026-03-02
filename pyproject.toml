@@ -1,0 +1,22 @@
+[project]
+name = "bpe-tokenizer-py"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Joshua Cohen", email = "jbcohen42@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "psutil>=7.2.2",
+    "pytest>=9.0.2",
+    "regex>=2026.2.19",
+    "tiktoken>=0.12.0",
+]
+
+[project.scripts]
+bpe-tokenizer-py = "bpe_tokenizer_py:main"
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10.0"]
+build-backend = "uv_build"
